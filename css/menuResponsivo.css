@@ -1,0 +1,75 @@
+/* 320px — 480px: dispositivos móveis.  colocar esses px para em */ 
+/* 768px = 48em  */
+/* 31.25em = 500px */
+
+@media (max-width: 48em) {
+    header .menu {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 31.25em) { 
+
+    header {
+        position: static;
+        opacity: 1;
+    }
+
+    header .titulo {
+        font-size: 2.4em;
+    }
+
+    header .menu {
+        opacity: .4;
+        flex-direction: column;
+        position: fixed;
+        left: 20px;
+        top: 100px;
+        z-index: -1;
+        border-radius: 1rem;
+        transition: all 1s;
+    }
+
+    header .menu-active {
+        width: auto;
+        height: auto;
+        opacity: .9;
+        transform: translate(-16px, 40px);
+        z-index: 1;
+    }
+
+    header .btn-menu {
+        background-color: black;
+        position: fixed;
+        top: 90px;
+        padding: 6px 12px;
+        border-radius: 1000px;
+        cursor: pointer;
+    }
+
+    .btn-menu .linha1, .linha2, .linha3 {
+        width: 30px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+        background-color: white;
+    }
+
+    .change .linha1 {
+        transform: translate(0, 11px) rotate(-45deg);
+    }
+
+    .change .linha2 {
+        opacity: 0;
+    }
+
+    .change .linha3 {
+        transform: translate(0, -11px) rotate(45deg);
+    }
+
+    
+    
+}

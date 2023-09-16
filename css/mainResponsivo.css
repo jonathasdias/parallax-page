@@ -1,0 +1,42 @@
+@media (max-width: 48em) {
+    main .content-flex-row .img-programador {
+        display: none;
+    }
+}
+
+@media (max-width: 31.25em) {
+    main .parallax h1 {
+        font-size: 3em;
+    }
+
+    main h2 {
+        font-size: 2em;
+    }
+
+    main p {
+        font-size: 1.2em;
+    }
+
+    main .container-imgs figure {
+        width: 3rem;
+        height: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    main .container-column figure {
+        width: 5rem;
+        height: 5rem;
+    }    
+
+    main .parallax-3 {
+        background: url('../imgs/code-html1.jpg')no-repeat center/cover fixed;
+    }
+
+    main .parallax-4 {
+        background: url('../imgs/website.png')no-repeat center/cover fixed;
+    }
+    
+    main .parallax-5 {
+        background: url('../imgs/code-javascript.jpg')no-repeat center/cover fixed;
+    }
+}
