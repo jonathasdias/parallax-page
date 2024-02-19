@@ -1,14 +1,8 @@
-/* 320px — 480px: dispositivos móveis.  colocar esses px para em */ 
-/* 768px = 48em  */
-/* 31.25em = 500px */
-
 @media (max-width: 48em) {
     header .menu {
-        display: flex;
         justify-content: center;
     }
 }
-
 
 @media (max-width: 31.25em) { 
 
@@ -22,8 +16,9 @@
     }
 
     header .menu {
-        opacity: .4;
+        display: none;
         flex-direction: column;
+        opacity: .4;
         position: fixed;
         left: 20px;
         top: 100px;
@@ -41,6 +36,7 @@
     }
 
     header .btn-menu {
+        display: inline-block;
         background-color: black;
         position: fixed;
         top: 90px;
@@ -69,7 +65,4 @@
     .change .linha3 {
         transform: translate(0, -11px) rotate(45deg);
     }
-
-    
-    
 }

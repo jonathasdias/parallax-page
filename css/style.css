@@ -27,11 +27,12 @@ header .titulo {
 }
 
 header .menu {
+    display: flex;
     background-color: black;
 }
 
 header .menu .menu-item {
-    display: inline-block;
+    display: block;
     text-decoration: none;
     font-weight: bolder;
     color: blue;
@@ -40,6 +41,10 @@ header .menu .menu-item {
 }
 header .menu .menu-item:hover {
     background-color: rgba(116, 111, 111, 0.26);
+}
+
+header .btn-menu {
+    display: none;
 }
 
 /* main */
